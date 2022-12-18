@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">NEW_CALL_APP</string>
+
+
+    <string name="title_1">Call Screen Themes </string>
+    <string name="text_1">Amazing app for make beautiful and colorfull incomming Call Screen Theme</string>
+
+    <string name="title_2">Caller Screen</string>
+    <string name="text_2">View different calling screens and change them to convert your simple mobile calling screen into a 3D animated calling screen.</string>
+
+    <string name="title_3">Features</string>
+    <string name="text_3">Incoming calls with live wallpaper. ❤ \n Videos for personalized color phone. 📞 \n Caller ID - identify who is calling you. 🎶</string>
+
+
+    <string name="applovin_sdk_key">WlMIFnVdDo3SrzlPExzQiWcgDaJNwWgwCq6FJ7hzBSwmTkQZ7THM6p-OlxRAfZ6ee96X5c_kHGGwvDs2bpC3Eq</string>
+    <string name="task_completed">Completed</string>
+    <string name="saved_name">key_ifo_name</string>
+    <string name="saved_age">key_ifo_age</string>
+
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+    <string name="retry">Retry</string>
+    <string name="it_seems_you_have_difficulties_connecting_to_one_of_our_servers_n_please_try_again_after_few_moments">it Seems You have difficulties connecting to one of our servers.\n Please try again after few moments</string>
+    <string name="network_problems">Network Problems</string>
+</resources>

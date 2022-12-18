@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/raduised"
+    android:backgroundTint="@color/call_color"
+    android:paddingHorizontal="@dimen/_10sdp"
+    android:paddingVertical="@dimen/_7sdp">
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hey Sweetie how are you ?"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12sdp"
+        tools:ignore="HardcodedText" />
+</LinearLayout>

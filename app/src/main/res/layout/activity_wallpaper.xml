@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.factor.bouncy.BouncyNestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bouncy_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    app:fling_animation_size=".7"
+    app:overscroll_animation_size=".7"
+    tools:context=".Wallpaper.WallpaperActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:gravity="start"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_10sdp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:gravity="start|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:padding="1dp"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    app:tint="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wallpaper"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="start|center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/fav"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_baseline_favorite_border_24"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:src="@drawable/ic_baseline_autorenew_24"
+                    app:tint="@color/white" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <com.factor.bouncy.BouncyRecyclerView
+            android:id="@+id/wallpaper_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:allow_drag_reorder="true"
+            app:allow_item_swipe="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:recyclerview_damping_ratio="DAMPING_RATIO_LOW_BOUNCY"
+            app:recyclerview_fling_animation_size=".7"
+            app:recyclerview_overscroll_animation_size=".7"
+            app:recyclerview_stiffness="STIFFNESS_MEDIUM"
+            app:spanCount="3"
+            tools:itemCount="5"
+            tools:listitem="@layout/wallpaper_item_view" />
+    </LinearLayout>
+
+
+</com.factor.bouncy.BouncyNestedScrollView>

@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/surfaceVideo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9b000000">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img"
+                android:layout_width="@dimen/_60sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:src="@drawable/photo" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/img"
+                android:layout_centerInParent="true"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:text="UserName"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_above="@id/banner"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/end"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/online"
+                android:backgroundTint="#92000000"
+                android:padding="@dimen/_15sdp"
+                android:src="@drawable/ic_baseline_call_end_24" />
+
+            <ImageView
+                android:id="@+id/start"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/online"
+                android:backgroundTint="#92000000"
+                android:padding="@dimen/_10sdp"
+                android:src="@drawable/btn_video_white"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/msg"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/online"
+                android:backgroundTint="#92000000"
+                android:padding="@dimen/_15sdp"
+                android:src="@drawable/ic_chat"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

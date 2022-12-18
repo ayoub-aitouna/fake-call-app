@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <VideoView
+                android:id="@+id/video_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/Control"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/_10sdp">
+
+            <SurfaceView
+                android:id="@+id/surfaceCam"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_130sdp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/Control"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_above="@id/banner"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:paddingHorizontal="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/end"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/online"
+                android:backgroundTint="#92000000"
+                android:padding="@dimen/_15sdp"
+                android:src="@drawable/ic_baseline_call_end_24" />
+
+
+            <ImageView
+                android:id="@+id/msg"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/online"
+                android:backgroundTint="#92000000"
+                android:padding="@dimen/_15sdp"
+                android:src="@drawable/ic_chat"
+                app:tint="@color/white" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
